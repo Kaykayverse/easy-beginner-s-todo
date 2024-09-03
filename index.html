@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo Web-Base App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header id="header-section">
+        <div class="container-fluid">
+            <div class="header-content">
+                <img src="todo.png" alt="header-log">
+                <h1>Kaykay's TODO++</h1>
+
+                <div class="switch">
+                    <span>ON</span>
+                    <span>OFF</span>
+                    <div class="roll" id="roll"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="searcher">
+        <div class="container">
+            <div class="search-content">
+                <label for="search">Searcher</label>
+                <input type="text" name="" id="search" class="search" placeholder="filter">
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <div class="control">
+            <span id="pending" class="active">Pending</span>
+            <span id="completed">Complete</span>
+        </div>
+    </div>
+    <section id="main-body">
+        <div class="container">
+            <div class="all-main">
+                <div class="main-content pending">
+                    
+                    <ul class="complete">
+                        <li>
+                            <div class="first">
+    
+                                GO TO SCHOOL
+                               <input type="checkbox" name="" id="checker" >
+                            </div>
+                            <em class="date"></em>
+                        </li>
+                        <li>
+                            <div class="first">
+    
+                               GO TO SCHOOL
+                               <input type="checkbox" name="" id="checker" >
+                            </div>
+                            <em class="date"></em>
+                        </li>
+                    </ul>
+    
+                    <div class="main-form">
+                        <form action="" id="add-list">
+                            <input type="text" name="" id="add-input">
+                            <input type="submit" value="Add ToDo" class="submit">
+                        </form>
+                    </div>
+                </div>
+                <div class="done">
+                   
+                    <ul class="todo-list">
+                        <li>
+                            <div class="first">
+    
+                                GO TO SCHOOL
+                                <button class="btn-del">
+                                    x
+                                </button>
+                            </div>
+                            <em class="date"></em>
+                        </li>
+                        
+                            
+                        
+                    </ul>
+    
+                    <!-- <div class="main-form">
+                        <form action="" id="add-list">
+                            <input type="text" name="" id="add-input">
+                            <input type="submit" value="Add ToDo" class="submit">
+                        </form>
+                    </div>
+                </div> -->
+            </div>
+            </div>
+    </section>
+    
+
+    <footer>
+        <div class="container-fluid">
+            <div class="logo">
+                <img src="todo.png" alt="">
+            </div>
+            <div class="brand">
+                <h2>kaykay's Todo &copy; 2024</h2>
+            </div>
+            <div class="socail-icons">
+                <a href="http://">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="http://">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="http://">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="http://">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
